@@ -4,6 +4,10 @@ let numDerrotas;
 let saldoVitorias;
 let nivel;
 
+//Atribuindo valores para testes:
+numVitorias = 85
+numDerrotas = 27
+
 //Chamada e definição da função para calcular o número de partidas ranqueadas:
 saldoRanqueadas(numVitorias, numDerrotas);
 
@@ -27,4 +31,11 @@ if(saldoVitorias<10){
     nivel = "Lendário";
 } else {
     nivel = "Imortal";
+}
+
+//estrutura de decisão para apresentar a mensagem final ao usuário:
+if(nivel){
+    console.log("O Herói tem o saldo de " + saldoVitorias + " e está no nível de " + nivel)
+} else {
+    console.log("Saldo ou nível indefinido!")
 }
